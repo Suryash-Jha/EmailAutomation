@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Hey Everyone</h1>
+    
+<form action = "." method = "POST">
+    {% csrf_token %}
+    <label for="your_name">Your name: </label>
+    <input id="your_name" type="text" name="your_name" placeholder="type name">
+    <input type="submit" value="OK">
+</form>
 </body>
 </html>
